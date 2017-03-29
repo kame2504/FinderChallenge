@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Finder challenger</title>
+    <meta charset="utf-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Proxima+Nova" rel="stylesheet" type="text/css">
+    <link href="/vendor/pure/pure-min.css" rel="stylesheet">
+    <link href="/styles/index.css" rel="stylesheet">
+    <body>
+      <div class="app pure-g">
+        <header class="pure-u-1">
+          <div class="pure-u-1-3">
+            <h1 class="logo">Finder challenge</h1>
+          </div>
+          <div class="pure-u-7-24">
+            <div class="search-form">
+              <input id="inputSearch" type="text" value="" onkeypress="return CheckText(event)">
+              <input id="btnSearch" type="button" onclick="SearchForm()" value="Buscar">
+            </div>
+          </div>
+          <div class="pure-u-1-3 search-save"><a href="#" onclick="SaveSearch()">Guardar búsqueda</a></div>
+        </header>
+        <aside class="filters pure-u-1-4">
+          <h3>Búsquedas guardadas
+            <ul class="filter-list" id="savedList"></ul>
+          </h3>
+          <h3>Categorías
+            <ul class="filter-list" id="categoryList"></ul>
+          </h3>
+          <h3>Idioma
+            <ul class="filter-list" id="languageList"></ul>
+          </h3>
+          <h3>Publicación
+            <ul class="filter-list" id="datePubList"></ul>
+          </h3>
+          <h3>Presentación
+            <ul class="filter-list" id="editionList"></ul>
+          </h3>
+        </aside>
+        <content class="pure-u-3-4" id="resultContent"></content>
+        <footer class="pure-u-1"></footer>
+      </div>
+      <script src="/vendor/underscore/underscore-min.js"></script>
+      <script src="/scripts/global.js"></script>
+      <script src="/scripts/search-form.js"></script>
+      <script src="/scripts/app.js"></script>
+    </body>
+  </head>
+</html>

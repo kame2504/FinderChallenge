@@ -10,7 +10,9 @@
     "gulp-stylus": "^2.6.0",
     "rupture": "^0.6.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
